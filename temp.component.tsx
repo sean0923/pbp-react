@@ -1,7 +1,10 @@
 import React from 'react';
 // import styled from 'styled-components/macro';
 
-const Temp: React.FC = () => {
+interface Props {
+  prop: any;
+}
+const Temp: React.FC<Props> = () => {
   return <div>Temp</div>;
 };
 
