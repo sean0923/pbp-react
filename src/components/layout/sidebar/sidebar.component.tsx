@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 
 import Header from './header/header.component';
+import NavItems from './nav-items/nav-items.component';
 
 interface Props {
   // prop: any;
@@ -11,10 +12,8 @@ const Sidebar: React.FC<Props> = () => {
     <>
       <Placeholder />
       <SidebarWrapper>
-        <Header text="Header"/>
-        <div>aaa</div>
-        <div>aaa</div>
-        <div>aaa</div>
+        <Header text="Header" />
+        <NavItems />
       </SidebarWrapper>
     </>
   );
