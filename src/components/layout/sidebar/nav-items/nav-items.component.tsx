@@ -9,8 +9,10 @@ const NavItems: React.FC<Props> = ({ history }) => {
   const { push } = history;
   return (
     <Wrapper>
-      <NavItem onClick={() => push('/aaa')}>AAA</NavItem>
-      <NavItem onClick={() => push('/bbb')}>BBB</NavItem>
+      <NavItem onClick={() => push('/formik-basic')}>Formik Basic</NavItem>
+      <NavItem onClick={() => push('/formik-reducing-boilerplate')}>
+        Formik Reducing Boilerplate
+      </NavItem>
       <NavItem onClick={() => push('/ccc')}>CCC</NavItem>
     </Wrapper>
   );
