@@ -15,6 +15,7 @@ const NavItems: React.FC<Props> = ({ history }) => {
       </NavItem>
       <NavItem onClick={() => push('/formik-field')}>Formik Field</NavItem>
       <NavItem onClick={() => push('/mu-formik-form')}>Mu Fromik Form</NavItem>
+      <NavItem onClick={() => push('/su-formik-form')}>Su Formik Form</NavItem>
     </Wrapper>
   );
 };
