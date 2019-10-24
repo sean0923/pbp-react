@@ -1,7 +1,8 @@
 import React from 'react';
-import {} from 'formik';
+import { FieldProps } from 'formik';
 
-const CustomInputComponent = ({
+interface Props extends FieldProps {}
+const CustomInputComponent: React.FC<Props> = ({
   field, // { name, value, onChange, onBlur }
   form: { touched, errors }, // also values, setXXXX, handleXXXX, dirty, isValid, status, etc.
   ...props
@@ -11,3 +12,5 @@ const CustomInputComponent = ({
     {touched[field.name] && errors[field.name] && <div className="error">{errors[field.name]}</div>}
   </div>
 );
+
+export default CustomInputComponent;

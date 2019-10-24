@@ -13,7 +13,8 @@ const NavItems: React.FC<Props> = ({ history }) => {
       <NavItem onClick={() => push('/formik-reducing-boilerplate')}>
         Formik Reducing Boilerplate
       </NavItem>
-      <NavItem onClick={() => push('/ccc')}>CCC</NavItem>
+      <NavItem onClick={() => push('/formik-field')}>Formik Field</NavItem>
+      <NavItem onClick={() => push('/mu-formik-form')}>Mu Fromik Form</NavItem>
     </Wrapper>
   );
 };
